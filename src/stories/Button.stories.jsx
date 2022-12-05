@@ -64,11 +64,18 @@ Large.args = {
 
 export const Small = Template.bind({});
 Small.args = {
-	size: 'small',
+	size: 'large',
 	label: 'Button',
 };
 
-//Centers the story component on the canvas
-// Small.parameters = {
-// 	layout: 'centered',
-// };
+// Centers the story component on the canvas
+Small.parameters = {
+	layout: 'centered',
+	backgrounds: {
+		values: [
+			{ name: 'red', value: '#f00' },
+			{ name: 'green', value: '#0f0' },
+			{ name: 'blue', value: '#00f' },
+		],
+	},
+};
